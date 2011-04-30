@@ -40,7 +40,7 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
-DIRNAME = os.path.abspath(os.path.dirname(__file__))
+#DIRNAME = os.path.abspath(os.path.dirname(__file__))
 
 # If you set this to False, Django will not format dates, numbers and
 # calendars according to the current locale
@@ -109,8 +109,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    #'/Users/Emily/PyStar/django_projects/VOEL/polls/templates/polls',
-    DIRNAME + '/polls/templates/polls',
+    '/Users/Emily/PyStar/django_projects/VOEL/polls/templates/polls',
+    #DIRNAME + '/polls/templates/polls',
 )
 
 INSTALLED_APPS = (
