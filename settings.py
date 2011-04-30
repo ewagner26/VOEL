@@ -1,4 +1,5 @@
 # Django settings for VOEL project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -38,6 +39,8 @@ SITE_ID = 1
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
+
+DIRNAME = os.path.abspath(os.path.dirname(__file__))
 
 # If you set this to False, Django will not format dates, numbers and
 # calendars according to the current locale
@@ -106,6 +109,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    #'/Users/Emily/PyStar/django_projects/VOEL/polls/templates/polls',
+    DIRNAME + '/polls/templates/polls',
 )
 
 INSTALLED_APPS = (
