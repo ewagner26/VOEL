@@ -4,7 +4,12 @@ from django.conf.urls.defaults import patterns, include, url
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns('', 
+    (r'^polls/$', 'polls.views.index'),
+    (r'^polls/(\d+)/$', 'polls.views.detail'),
+    (r'^polls/(\d+)/results/$', 'polls.views.results'),
+    (r'^polls/(\d+)/vote/$', 'polls.views.vote'),
+    
     # Examples:
     # url(r'^$', 'VOEL.views.home', name='home'),
     # url(r'^VOEL/', include('VOEL.foo.urls')),
